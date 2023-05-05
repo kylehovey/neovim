@@ -18,10 +18,9 @@ vim.opt.ruler = true -- Display Cursor Position
 -- =============== EDITOR OPTIONS ===============
 vim.opt.foldmethod = 'indent' -- Fold Based Upon Indent
 vim.opt.foldnestmax = 10 -- Deepest Fold Allowed Is 10 Levels
-vim.opt.nofoldenable = true -- Don't Fold by Default
+vim.opt.foldenable = false -- Don't Fold by Default
 vim.opt.foldlevel = 1 -- Allow Folding At One Line
 vim.opt.autoindent = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.expandtab = true
-vim.opt.backspace = 2 -- Make backspace act normal
