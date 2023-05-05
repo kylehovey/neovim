@@ -57,6 +57,7 @@ return require('packer').startup(function(use)
 
 	-- Color Schemes
   use { 'rose-pine/neovim', as = 'rose-pine' }
+  use 'ellisonleao/gruvbox.nvim'
 
 	-- Visual/Information UX
 	use 'lukas-reineke/indent-blankline.nvim'
