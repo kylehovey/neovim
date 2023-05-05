@@ -33,13 +33,11 @@ return require('packer').startup(function(use)
 		branch = 'release'
 	}
 	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+	use 'nvim-treesitter/playground'
 
-	-- Syntax Highlighting
-	use 'sheerun/vim-polyglot'
+	-- Language Support
 	use 'lilydjwg/colorizer'
 	use 'pbrisbin/vim-syntax-shakespeare'
-
-	-- Language Toolkits
 	use 'tpope/vim-rails'
 	use 'alx741/yesod.vim'
 	use 'jpalardy/vim-slime'

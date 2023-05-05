@@ -89,11 +89,6 @@ _G.packer_plugins = {
     path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/colorizer",
     url = "https://github.com/lilydjwg/colorizer"
   },
-  ["elm-vim"] = {
-    loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/elm-vim",
-    url = "https://github.com/elm-tooling/elm-vim"
-  },
   ["git-blame.vim"] = {
     loaded = true,
     path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/git-blame.vim",
@@ -113,11 +108,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
-  },
-  ["julia-vim"] = {
-    loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/julia-vim",
-    url = "https://github.com/JuliaEditorSupport/julia-vim"
   },
   ["lazygit.nvim"] = {
     loaded = true,
@@ -148,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  playground = {
+    loaded = true,
+    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/playground",
+    url = "https://github.com/nvim-treesitter/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
@@ -204,26 +199,6 @@ _G.packer_plugins = {
     path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-latex",
     url = "https://github.com/vim-latex/vim-latex"
   },
-  ["vim-markdown"] = {
-    loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-markdown",
-    url = "https://github.com/plasticboy/vim-markdown"
-  },
-  ["vim-pandoc"] = {
-    loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-pandoc",
-    url = "https://github.com/vim-pandoc/vim-pandoc"
-  },
-  ["vim-pandoc-syntax"] = {
-    loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-pandoc-syntax",
-    url = "https://github.com/vim-pandoc/vim-pandoc-syntax"
-  },
-  ["vim-polyglot"] = {
-    loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-polyglot",
-    url = "https://github.com/sheerun/vim-polyglot"
-  },
   ["vim-prisma"] = {
     loaded = true,
     path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-prisma",
@@ -249,20 +224,10 @@ _G.packer_plugins = {
     path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
   },
-  ["vim-svelte-plugin"] = {
-    loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-svelte-plugin",
-    url = "https://github.com/leafOfTree/vim-svelte-plugin"
-  },
   ["vim-syntax-shakespeare"] = {
     loaded = true,
     path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-syntax-shakespeare",
     url = "https://github.com/pbrisbin/vim-syntax-shakespeare"
-  },
-  ["vim-vue"] = {
-    loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-vue",
-    url = "https://github.com/posva/vim-vue"
   },
   vimwiki = {
     loaded = true,
