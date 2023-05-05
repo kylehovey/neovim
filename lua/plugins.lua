@@ -34,26 +34,21 @@ return require('packer').startup(function(use)
 	}
 	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
-	-- Individual Language Support
+	-- Syntax Highlighting
 	use 'sheerun/vim-polyglot'
 	use 'lilydjwg/colorizer'
-	use 'alx741/yesod.vim'
 	use 'pbrisbin/vim-syntax-shakespeare'
+
+	-- Language Toolkits
 	use 'tpope/vim-rails'
-	use 'posva/vim-vue'
-	use 'leafOfTree/vim-svelte-plugin'
-	use 'elm-tooling/elm-vim'
-	use 'vim-latex/vim-latex'
-	use 'vim-pandoc/vim-pandoc'
-	use 'vim-pandoc/vim-pandoc-syntax'
-	use 'JuliaEditorSupport/julia-vim'
-	use 'mroavi/vim-julia-cell'
+	use 'alx741/yesod.vim'
 	use 'jpalardy/vim-slime'
+	use 'mroavi/vim-julia-cell'
 	use 'kdheepak/JuliaFormatter.vim'
-	use 'plasticboy/vim-markdown'
 	use 'vimwiki/vimwiki'
 	use 'timtro/glslView-nvim'
 	use 'pantharshit00/vim-prisma'
+	use 'vim-latex/vim-latex'
 
 	-- Versioning
 	use 'tpope/vim-fugitive'
