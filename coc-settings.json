@@ -1,0 +1,55 @@
+{
+  "languageserver": {
+    "elmLS": {
+      "command": "elm-language-server",
+      "filetypes": ["elm"],
+      "rootPatterns": ["elm.json"]
+    },
+    "haskell": {
+      "command": "haskell-language-server-wrapper",
+      "args": [
+        "--lsp"
+      ],
+      "rootPatterns": [
+        ".stack.yaml",
+        ".hie-bios",
+        "BUILD.bazel",
+        "cabal.config",
+        "package.yaml"
+      ],
+      "filetypes": [
+        "hs",
+        "lhs",
+        "haskell"
+      ],
+      "initializationOptions": {
+        "languageServerHaskell": {
+          "hlintOn": true,
+          "maxNumberOfProblems": 10,
+          "completionSnippetsOn": true
+        }
+      }
+    }
+  },
+  "suggest.noselect": true,
+  "codeLens.enable": true,
+  "javascript.referencesCodeLens.enable": false,
+  "typescript.referencesCodeLens.enable": false,
+  "javascript.suggest.autoImports": true, 
+  "typescript.suggest.autoImports": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "elm",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "hs",
+    "svelte",
+    "julia",
+    "json"
+  ],
+  "svelte.enable-ts-plugin": true,
+  "graphql.filetypes": [
+    "graphql", "gql"
+  ]
+}
