@@ -99,11 +99,6 @@ _G.packer_plugins = {
     path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/glslView-nvim",
     url = "https://github.com/timtro/glslView-nvim"
   },
-  gruvbox = {
-    loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/gruvbox",
-    url = "https://github.com/morhetz/gruvbox"
-  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
@@ -148,6 +143,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["rose-pine"] = {
+    loaded = true,
+    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
   },
   tcomment_vim = {
     loaded = true,

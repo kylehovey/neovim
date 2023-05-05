@@ -56,7 +56,7 @@ return require('packer').startup(function(use)
 	use 'kdheepak/lazygit.nvim'
 
 	-- Color Schemes
-	use 'morhetz/gruvbox'
+  use { 'rose-pine/neovim', as = 'rose-pine' }
 
 	-- Visual/Information UX
 	use 'lukas-reineke/indent-blankline.nvim'
