@@ -14,14 +14,6 @@ map <Leader>ev :e ~/.config/nvim/init.lua<CR>
 map <Leader>f :NERDTreeToggle<CR><C-l>
 " Open current file in NerdTree
 map <Leader>n :NERDTreeFind <CR>
-" Fuzzy-Find Files
-map <Leader>F <cmd>Telescope find_files<cr>
-" Search Staged Files
-map <Leader>G <cmd>Telescope git_status<cr>
-" Grep
-map <Leader>a <cmd>Telescope live_grep<cr>
-" Treesitter
-map <Leader>T <cmd>Telescope treesitter<cr>
 
 " Spell Checking
 map <Leader>w z=1<CR>

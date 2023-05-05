@@ -31,7 +31,3 @@ vim.g.javascript_plugin_jsdoc = 1
 
 -- Searching
 vim.g.ackprg = 'ag --vimgrep' -- Use ag instead of ack
-require('telescope').load_extension "file_browser"
-require('telescope').setup({
-	defaults = { layout_config = { vertical = { width = 0.5 }}}
-})
