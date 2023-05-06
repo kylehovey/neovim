@@ -2,17 +2,18 @@ require('rose-pine').setup({
     disable_background = true
 })
 
-require('gruvbox').setup({
-    disable_background = true
-})
+_G.gruvbox_material_background = 'original'
+_G.gruvbox_material_foreground = 'original'
 
-function ColorMyPencils(color) 
-	color = color or 'gruvbox'
+function ColorScheme(color, transparent_bg)
+	color = color or 'gruvbox-material'
+  transparent_bg = transparent_bg or false
 	vim.cmd.colorscheme(color)
 
-	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-
+  if transparent_bg then
+    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+  end
 end
 
-ColorMyPencils()
+ColorScheme()
