@@ -88,7 +88,7 @@ map <Leader>d :nohl<CR><C-l>
 map <Leader>i :IndentLinesToggle<CR>
 
 " Config
-map <Leader>r :so ~/.vimrc<CR>
+map <Leader>r :so<CR>
 
 " Language Server Config
 inoremap <silent><expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
