@@ -11,9 +11,10 @@ map <Leader>Q :q!<CR>
 " Edit init.lua
 map <Leader>ev :e ~/.config/nvim/init.lua<CR>
 " Go to NERD Tree
-map <Leader>f :NERDTreeToggle<CR><C-l>
+" map <Leader>f :NERDTreeToggle<CR><C-l>
+map <Leader>f :NvimTreeToggle<CR><C-l>
 " Open current file in NerdTree
-map <Leader>n :NERDTreeFind <CR>
+" map <Leader>n :NERDTreeFind <CR>
 
 " Spell Checking
 map <Leader>w z=1<CR>
