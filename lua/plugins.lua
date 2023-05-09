@@ -62,7 +62,7 @@ return require('packer').startup(function(use)
 
 	-- Visual/Information UX
 	use 'lukas-reineke/indent-blankline.nvim'
-	use 'vim-airline/vim-airline'
+  use 'famiu/feline.nvim'
 	use 'ryanoasis/vim-devicons'
 	use 'ruanyl/vim-gh-line'
 	use 'nvim-tree/nvim-web-devicons'

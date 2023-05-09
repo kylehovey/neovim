@@ -14,6 +14,7 @@ vim.opt.lbr = true -- Wrap text
 vim.opt.visualbell = true -- Use a Visual Bell
 vim.opt.cmdheight = 1 -- Minimize Command Window Height
 vim.opt.ruler = true -- Display Cursor Position
+vim.opt.termguicolors = true -- 24 bit color
 
 -- =============== EDITOR OPTIONS ===============
 vim.opt.foldmethod = 'indent' -- Fold Based Upon Indent
