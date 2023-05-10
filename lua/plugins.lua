@@ -25,7 +25,6 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 	use 'nvim-telescope/telescope-file-browser.nvim'
-	-- use 'scrooloose/nerdtree'
   use 'nvim-tree/nvim-tree.lua'
 
 	-- Language Server/AST Support
@@ -52,7 +51,6 @@ return require('packer').startup(function(use)
 	-- Versioning
 	use 'tpope/vim-fugitive'
 	use 'airblade/vim-gitgutter'
-	-- use 'Xuyuanp/nerdtree-git-plugin'
 	use 'zivyangll/git-blame.vim'
 	use 'kdheepak/lazygit.nvim'
 
