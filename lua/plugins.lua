@@ -1,16 +1,3 @@
-local ensure_packer = function()
-  local fn = vim.fn
-  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
-  if fn.empty(fn.glob(install_path)) > 0 then
-    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-    vim.cmd [[packadd packer.nvim]]
-    return true
-  end
-  return false
-end
-
-local packer_bootstrap = ensure_packer()
-
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 
@@ -25,6 +12,7 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 	use 'nvim-telescope/telescope-file-browser.nvim'
+  use 'psiska/telescope-hoogle.nvim'
   use 'nvim-tree/nvim-tree.lua'
 
 	-- Language Server/AST Support
@@ -38,13 +26,14 @@ return require('packer').startup(function(use)
 	-- Language Support
 	use 'lilydjwg/colorizer'
 	use 'pbrisbin/vim-syntax-shakespeare'
-	use 'tpope/vim-rails'
+	-- use 'tpope/vim-rails'
 	use 'alx741/yesod.vim'
-	use 'jpalardy/vim-slime'
-	use 'mroavi/vim-julia-cell'
-	use 'kdheepak/JuliaFormatter.vim'
+  use { 'ndmitchell/ghcid', rtp = 'plugins/nvim' }
+	-- use 'jpalardy/vim-slime'
+	-- use 'mroavi/vim-julia-cell'
+	-- use 'kdheepak/JuliaFormatter.vim'
 	use 'vimwiki/vimwiki'
-	use 'timtro/glslView-nvim'
+	-- use 'timtro/glslView-nvim'
 	use 'pantharshit00/vim-prisma'
 	use 'vim-latex/vim-latex'
 
@@ -55,7 +44,6 @@ return require('packer').startup(function(use)
 	use 'kdheepak/lazygit.nvim'
 
 	-- Color Schemes
-  use { 'rose-pine/neovim', as = 'rose-pine' }
   use 'sainnhe/gruvbox-material'
   use 'sainnhe/everforest'
 

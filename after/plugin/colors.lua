@@ -1,7 +1,3 @@
-require('rose-pine').setup({
-    disable_background = true
-})
-
 _G.gruvbox_material_background = 'original'
 _G.gruvbox_material_foreground = 'original'
 

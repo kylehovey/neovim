@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/speleo/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/speleo/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/speleo/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/speleo/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/speleo/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/Users/kylehovey/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/kylehovey/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/kylehovey/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/kylehovey/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/kylehovey/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -74,184 +74,168 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["JuliaFormatter.vim"] = {
-    loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/JuliaFormatter.vim",
-    url = "https://github.com/kdheepak/JuliaFormatter.vim"
-  },
   ["coc.nvim"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
   colorizer = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/colorizer",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/colorizer",
     url = "https://github.com/lilydjwg/colorizer"
   },
   everforest = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/everforest",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/everforest",
     url = "https://github.com/sainnhe/everforest"
   },
   ["feline.nvim"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/feline.nvim",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/feline.nvim",
     url = "https://github.com/famiu/feline.nvim"
+  },
+  ghcid = {
+    loaded = true,
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/ghcid/plugins/nvim",
+    url = "https://github.com/ndmitchell/ghcid"
   },
   ["git-blame.vim"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/git-blame.vim",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/git-blame.vim",
     url = "https://github.com/zivyangll/git-blame.vim"
-  },
-  ["glslView-nvim"] = {
-    loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/glslView-nvim",
-    url = "https://github.com/timtro/glslView-nvim"
   },
   ["gruvbox-material"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/gruvbox-material",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/gruvbox-material",
     url = "https://github.com/sainnhe/gruvbox-material"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["lazygit.nvim"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
     url = "https://github.com/kdheepak/lazygit.nvim"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   playground = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/playground",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/playground",
     url = "https://github.com/nvim-treesitter/playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["rose-pine"] = {
-    loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/rose-pine",
-    url = "https://github.com/rose-pine/neovim"
   },
   tcomment_vim = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/tcomment_vim",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/tcomment_vim",
     url = "https://github.com/tomtom/tcomment_vim"
   },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
     url = "https://github.com/nvim-telescope/telescope-file-browser.nvim"
+  },
+  ["telescope-hoogle.nvim"] = {
+    loaded = true,
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/telescope-hoogle.nvim",
+    url = "https://github.com/psiska/telescope-hoogle.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   undotree = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/undotree",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
   ["vim-devicons"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-devicons",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/vim-devicons",
     url = "https://github.com/ryanoasis/vim-devicons"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-gh-line"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-gh-line",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/vim-gh-line",
     url = "https://github.com/ruanyl/vim-gh-line"
   },
   ["vim-gitgutter"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
-  },
-  ["vim-julia-cell"] = {
-    loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-julia-cell",
-    url = "https://github.com/mroavi/vim-julia-cell"
   },
   ["vim-latex"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-latex",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/vim-latex",
     url = "https://github.com/vim-latex/vim-latex"
   },
   ["vim-prisma"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-prisma",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/vim-prisma",
     url = "https://github.com/pantharshit00/vim-prisma"
-  },
-  ["vim-rails"] = {
-    loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-rails",
-    url = "https://github.com/tpope/vim-rails"
   },
   ["vim-repeat"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-repeat",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/vim-repeat",
     url = "https://github.com/tpope/vim-repeat"
-  },
-  ["vim-slime"] = {
-    loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-slime",
-    url = "https://github.com/jpalardy/vim-slime"
   },
   ["vim-surround"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-surround",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
   },
   ["vim-syntax-shakespeare"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-syntax-shakespeare",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/vim-syntax-shakespeare",
     url = "https://github.com/pbrisbin/vim-syntax-shakespeare"
   },
   vimwiki = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vimwiki",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/vimwiki",
     url = "https://github.com/vimwiki/vimwiki"
   },
   ["yesod.vim"] = {
     loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/yesod.vim",
+    path = "/Users/kylehovey/.local/share/nvim/site/pack/packer/start/yesod.vim",
     url = "https://github.com/alx741/yesod.vim"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Runtimepath customization
+time([[Runtimepath customization]], true)
+vim.o.runtimepath = vim.o.runtimepath .. ",/Users/kylehovey/.local/share/nvim/site/pack/packer/start/ghcid/plugins/nvim"
+time([[Runtimepath customization]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
