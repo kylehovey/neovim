@@ -21,7 +21,7 @@ return require('packer').startup(function(use)
 
 	-- File browsing and searching
 	use {
-		'nvim-telescope/telescope.nvim',
+		'nvim-telescope/telescope.nvim', tag='0.1.4',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 	use 'nvim-telescope/telescope-file-browser.nvim'
@@ -32,7 +32,14 @@ return require('packer').startup(function(use)
 		'neoclide/coc.nvim',
 		branch = 'release'
 	}
-	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+
+	use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function()
+      local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+      ts_update()
+    end,
+  }
 	use 'nvim-treesitter/playground'
 
 	-- Language Support
