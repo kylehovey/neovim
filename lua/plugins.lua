@@ -21,7 +21,7 @@ return require('packer').startup(function(use)
 
 	-- File browsing and searching
 	use {
-		'nvim-telescope/telescope.nvim', tag='0.1.1',
+		'nvim-telescope/telescope.nvim',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 	use 'nvim-telescope/telescope-file-browser.nvim'
@@ -45,6 +45,7 @@ return require('packer').startup(function(use)
 	use 'kdheepak/JuliaFormatter.vim'
 	use 'vimwiki/vimwiki'
 	use 'timtro/glslView-nvim'
+  use 'tikhomirov/vim-glsl'
 	use 'pantharshit00/vim-prisma'
 	use 'vim-latex/vim-latex'
 

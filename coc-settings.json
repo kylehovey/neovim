@@ -2,8 +2,12 @@
   "languageserver": {
     "elmLS": {
       "command": "elm-language-server",
-      "filetypes": ["elm"],
-      "rootPatterns": ["elm.json"]
+      "filetypes": [
+        "elm"
+      ],
+      "rootPatterns": [
+        "elm.json"
+      ]
     },
     "haskell": {
       "command": "haskell-language-server-wrapper",
@@ -35,7 +39,7 @@
   "codeLens.enable": true,
   "javascript.referencesCodeLens.enable": false,
   "typescript.referencesCodeLens.enable": false,
-  "javascript.suggest.autoImports": true, 
+  "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "elm",
@@ -50,6 +54,10 @@
   ],
   "svelte.enable-ts-plugin": true,
   "graphql.filetypes": [
-    "graphql", "gql"
-  ]
+    "graphql",
+    "gql"
+  ],
+  "eslint": {
+    "autoFixOnSave": true
+  },
 }
