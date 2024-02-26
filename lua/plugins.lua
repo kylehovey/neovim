@@ -58,13 +58,17 @@ return require('packer').startup(function(use)
 
 	-- Versioning
 	use 'tpope/vim-fugitive'
-	use 'airblade/vim-gitgutter'
+	use {
+    'airblade/vim-gitgutter',
+    branch = 'main'
+  }
 	use 'zivyangll/git-blame.vim'
 	use 'kdheepak/lazygit.nvim'
 
 	-- Color Schemes
   use { 'rose-pine/neovim', as = 'rose-pine' }
   use 'sainnhe/gruvbox-material'
+  use { "ellisonleao/gruvbox.nvim" }
   use 'sainnhe/everforest'
 
 	-- Visual/Information UX

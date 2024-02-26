@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/gruvbox-material",
     url = "https://github.com/sainnhe/gruvbox-material"
   },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
