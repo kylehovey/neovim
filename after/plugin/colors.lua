@@ -6,8 +6,8 @@ _G.gruvbox_material_background = 'original'
 _G.gruvbox_material_foreground = 'original'
 
 function ColorScheme(color, transparent_bg)
-	color = color or 'gruvbox'
-  transparent_bg = transparent_bg or false
+	color = color or 'vitesse'
+  transparent_bg = transparent_bg or true
 	vim.cmd.colorscheme(color)
 
   if transparent_bg then

@@ -70,6 +70,10 @@ return require('packer').startup(function(use)
   use 'sainnhe/gruvbox-material'
   use { "ellisonleao/gruvbox.nvim" }
   use 'sainnhe/everforest'
+  use {
+    "2nthony/vitesse.nvim",
+    requires = { "tjdevries/colorbuddy.nvim" }
+  }
 
 	-- Visual/Information UX
 	use 'lukas-reineke/indent-blankline.nvim'

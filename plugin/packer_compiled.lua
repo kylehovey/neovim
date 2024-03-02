@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
+  ["colorbuddy.nvim"] = {
+    loaded = true,
+    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
+    url = "https://github.com/tjdevries/colorbuddy.nvim"
+  },
   colorizer = {
     loaded = true,
     path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/colorizer",
@@ -253,6 +258,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vimwiki",
     url = "https://github.com/vimwiki/vimwiki"
+  },
+  ["vitesse.nvim"] = {
+    loaded = true,
+    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vitesse.nvim",
+    url = "https://github.com/2nthony/vitesse.nvim"
   },
   ["yesod.vim"] = {
     loaded = true,
