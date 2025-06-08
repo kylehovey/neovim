@@ -1,7 +1,3 @@
-require('rose-pine').setup({
-    disable_background = true
-})
-
 require("catppuccin").setup({
   flavour = "mocha",
   transparent_background = true,

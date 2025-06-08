@@ -66,7 +66,6 @@ return require('packer').startup(function(use)
 	use 'kdheepak/lazygit.nvim'
 
 	-- Color Schemes
-  use { 'rose-pine/neovim', as = 'rose-pine' }
   use 'sainnhe/gruvbox-material'
   use { "ellisonleao/gruvbox.nvim" }
   use 'sainnhe/everforest'
