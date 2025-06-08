@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/speleo/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?.lua;/Users/speleo/.cache/nvim/packer_hererocks/2.1.1703358377/share/lua/5.1/?/init.lua;/Users/speleo/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?.lua;/Users/speleo/.cache/nvim/packer_hererocks/2.1.1703358377/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/speleo/.cache/nvim/packer_hererocks/2.1.1703358377/lib/lua/5.1/?.so"
+local package_path_str = "/Users/speleo/.cache/nvim/packer_hererocks/2.1.1727870382/share/lua/5.1/?.lua;/Users/speleo/.cache/nvim/packer_hererocks/2.1.1727870382/share/lua/5.1/?/init.lua;/Users/speleo/.cache/nvim/packer_hererocks/2.1.1727870382/lib/luarocks/rocks-5.1/?.lua;/Users/speleo/.cache/nvim/packer_hererocks/2.1.1727870382/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/speleo/.cache/nvim/packer_hererocks/2.1.1727870382/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -78,6 +78,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/JuliaFormatter.vim",
     url = "https://github.com/kdheepak/JuliaFormatter.vim"
+  },
+  catppuccin = {
+    loaded = true,
+    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
   },
   ["coc.nvim"] = {
     loaded = true,
@@ -163,6 +168,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["presenting.nvim"] = {
+    loaded = true,
+    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/presenting.nvim",
+    url = "https://github.com/sotte/presenting.nvim"
   },
   ["rose-pine"] = {
     loaded = true,
@@ -253,11 +263,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vim-syntax-shakespeare",
     url = "https://github.com/pbrisbin/vim-syntax-shakespeare"
-  },
-  vimwiki = {
-    loaded = true,
-    path = "/Users/speleo/.local/share/nvim/site/pack/packer/start/vimwiki",
-    url = "https://github.com/vimwiki/vimwiki"
   },
   ["vitesse.nvim"] = {
     loaded = true,

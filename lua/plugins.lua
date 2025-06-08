@@ -50,7 +50,7 @@ return require('packer').startup(function(use)
 	use 'jpalardy/vim-slime'
 	use 'mroavi/vim-julia-cell'
 	use 'kdheepak/JuliaFormatter.vim'
-	use 'vimwiki/vimwiki'
+	-- use 'vimwiki/vimwiki'
 	use 'timtro/glslView-nvim'
   use 'tikhomirov/vim-glsl'
 	use 'pantharshit00/vim-prisma'
@@ -70,6 +70,7 @@ return require('packer').startup(function(use)
   use 'sainnhe/gruvbox-material'
   use { "ellisonleao/gruvbox.nvim" }
   use 'sainnhe/everforest'
+  use { "catppuccin/nvim", as = "catppuccin" }
   use {
     "2nthony/vitesse.nvim",
     requires = { "tjdevries/colorbuddy.nvim" }
@@ -82,4 +83,8 @@ return require('packer').startup(function(use)
 	use 'ruanyl/vim-gh-line'
 	use 'nvim-tree/nvim-web-devicons'
   use 'mbbill/undotree'
+
+  -- Presentations
+  use 'sotte/presenting.nvim'
+  -- use 'MeanderingProgrammer/render-markdown.nvim'
 end)
